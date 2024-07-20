@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0413DB722C44CCAD00135F15 /* CrimesAndPoliceStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413DB712C44CCAD00135F15 /* CrimesAndPoliceStations.swift */; };
+		0413DB742C456CCF00135F15 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413DB732C456CCF00135F15 /* APIManager.swift */; };
+		0413DB7A2C4589C600135F15 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413DB792C4589C600135F15 /* AuthService.swift */; };
+		0413DB7C2C458E7200135F15 /* OTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413DB7B2C458E7200135F15 /* OTPResponse.swift */; };
+		0413DB7E2C46215600135F15 /* VerifyOTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413DB7D2C46215600135F15 /* VerifyOTPResponse.swift */; };
+		0413DB802C462DA300135F15 /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413DB7F2C462DA300135F15 /* CreateUser.swift */; };
+		043914BC2C494BE900897E16 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043914BB2C494BE900897E16 /* UserProvider.swift */; };
+		04694C8A2C3F815500BF9603 /* ApiMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694C892C3F815500BF9603 /* ApiMapsViewController.swift */; };
+		04694C942C3FAAB700BF9603 /* OSMResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694C932C3FAAB700BF9603 /* OSMResponse.swift */; };
+		04694C962C3FB90D00BF9603 /* CrimeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694C952C3FB90D00BF9603 /* CrimeAnnotation.swift */; };
+		04694C982C3FD15E00BF9603 /* Admin View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694C972C3FD15E00BF9603 /* Admin View Controller.swift */; };
+		04694C9B2C3FE7E200BF9603 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04694C9A2C3FE7E200BF9603 /* Alamofire */; };
+		04694C9D2C3FE83C00BF9603 /* Crime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04694C9C2C3FE83C00BF9603 /* Crime.swift */; };
+		047B41802C4B7FD5008B2722 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B417F2C4B7FD5008B2722 /* UserData.swift */; };
+		04BAC1252C3D102900DDBEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAC1242C3D102900DDBEAB /* AppDelegate.swift */; };
+		04BAC1272C3D102900DDBEAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAC1262C3D102900DDBEAB /* SceneDelegate.swift */; };
+		04BAC12C2C3D102900DDBEAB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 04BAC12B2C3D102900DDBEAB /* Base */; };
+		04BAC12E2C3D102B00DDBEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BAC12D2C3D102B00DDBEAB /* Assets.xcassets */; };
+		04BAC1312C3D102B00DDBEAB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 04BAC1302C3D102B00DDBEAB /* Base */; };
+		04CC07482C40ECE7008BED4E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC07472C40ECE7008BED4E /* ProfileViewController.swift */; };
+		04CC074A2C40ECFA008BED4E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC07492C40ECFA008BED4E /* SettingsViewController.swift */; };
+		04CC074C2C410B1B008BED4E /* termsAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC074B2C410B1B008BED4E /* termsAndConditionViewController.swift */; };
+		04CC074E2C411202008BED4E /* FAQsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC074D2C411202008BED4E /* FAQsViewController.swift */; };
+		04CC07502C411EE3008BED4E /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC074F2C411EE3008BED4E /* PrivacyViewController.swift */; };
+		04CC07522C4122A4008BED4E /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC07512C4122A4008BED4E /* AboutUsViewController.swift */; };
+		04F1B6542C42328F00AE0948 /* dropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B6532C42328F00AE0948 /* dropDownButton.swift */; };
+		04F1B6562C42357200AE0948 /* optionsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1B6552C42357200AE0948 /* optionsShow.swift */; };
+		04FB79902C3ED406003C3E14 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB798F2C3ED406003C3E14 /* SignUpViewController.swift */; };
+		04FB79922C3ED418003C3E14 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB79912C3ED418003C3E14 /* OTPViewController.swift */; };
+		04FB79972C3EE15F003C3E14 /* SignInViwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB79962C3EE15F003C3E14 /* SignInViwController.swift */; };
+		04FB79992C3EEA2B003C3E14 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB79982C3EEA2B003C3E14 /* CheckBox.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0413DB712C44CCAD00135F15 /* CrimesAndPoliceStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimesAndPoliceStations.swift; sourceTree = "<group>"; };
+		0413DB732C456CCF00135F15 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0413DB792C4589C600135F15 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		0413DB7B2C458E7200135F15 /* OTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPResponse.swift; sourceTree = "<group>"; };
+		0413DB7D2C46215600135F15 /* VerifyOTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPResponse.swift; sourceTree = "<group>"; };
+		0413DB7F2C462DA300135F15 /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser.swift; sourceTree = "<group>"; };
+		043914BB2C494BE900897E16 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
+		04694C892C3F815500BF9603 /* ApiMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMapsViewController.swift; sourceTree = "<group>"; };
+		04694C932C3FAAB700BF9603 /* OSMResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSMResponse.swift; sourceTree = "<group>"; };
+		04694C952C3FB90D00BF9603 /* CrimeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeAnnotation.swift; sourceTree = "<group>"; };
+		04694C972C3FD15E00BF9603 /* Admin View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Admin View Controller.swift"; sourceTree = "<group>"; };
+		04694C9C2C3FE83C00BF9603 /* Crime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crime.swift; sourceTree = "<group>"; };
+		047B417F2C4B7FD5008B2722 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		04BAC1212C3D102900DDBEAB /* ConstableOnPatrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstableOnPatrol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BAC1242C3D102900DDBEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04BAC1262C3D102900DDBEAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04BAC12B2C3D102900DDBEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04BAC12D2C3D102B00DDBEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04BAC1302C3D102B00DDBEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04BAC1322C3D102B00DDBEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CC07472C40ECE7008BED4E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		04CC07492C40ECFA008BED4E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		04CC074B2C410B1B008BED4E /* termsAndConditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = termsAndConditionViewController.swift; sourceTree = "<group>"; };
+		04CC074D2C411202008BED4E /* FAQsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQsViewController.swift; sourceTree = "<group>"; };
+		04CC074F2C411EE3008BED4E /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		04CC07512C4122A4008BED4E /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		04F1B6532C42328F00AE0948 /* dropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropDownButton.swift; sourceTree = "<group>"; };
+		04F1B6552C42357200AE0948 /* optionsShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionsShow.swift; sourceTree = "<group>"; };
+		04FB798F2C3ED406003C3E14 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		04FB79912C3ED418003C3E14 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		04FB79962C3EE15F003C3E14 /* SignInViwController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViwController.swift; sourceTree = "<group>"; };
+		04FB79982C3EEA2B003C3E14 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04BAC11E2C3D102900DDBEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04694C9B2C3FE7E200BF9603 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04694C8D2C3F857900BF9603 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				043914BB2C494BE900897E16 /* UserProvider.swift */,
+				04694C932C3FAAB700BF9603 /* OSMResponse.swift */,
+				04694C9C2C3FE83C00BF9603 /* Crime.swift */,
+				04694C952C3FB90D00BF9603 /* CrimeAnnotation.swift */,
+				04F1B6532C42328F00AE0948 /* dropDownButton.swift */,
+				04F1B6552C42357200AE0948 /* optionsShow.swift */,
+				0413DB712C44CCAD00135F15 /* CrimesAndPoliceStations.swift */,
+				047B417F2C4B7FD5008B2722 /* UserData.swift */,
+				0413DB792C4589C600135F15 /* AuthService.swift */,
+				0413DB7B2C458E7200135F15 /* OTPResponse.swift */,
+				0413DB7F2C462DA300135F15 /* CreateUser.swift */,
+				0413DB7D2C46215600135F15 /* VerifyOTPResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04BAC1182C3D102900DDBEAB = {
+			isa = PBXGroup;
+			children = (
+				04BAC1232C3D102900DDBEAB /* ConstableOnPatrol */,
+				04BAC1222C3D102900DDBEAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04BAC1222C3D102900DDBEAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04BAC1212C3D102900DDBEAB /* ConstableOnPatrol.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04BAC1232C3D102900DDBEAB /* ConstableOnPatrol */ = {
+			isa = PBXGroup;
+			children = (
+				04BAC1242C3D102900DDBEAB /* AppDelegate.swift */,
+				04BAC1262C3D102900DDBEAB /* SceneDelegate.swift */,
+				04FB79982C3EEA2B003C3E14 /* CheckBox.swift */,
+				04694C8D2C3F857900BF9603 /* Model */,
+				04FB79952C3ED446003C3E14 /* View */,
+				04FB798E2C3ED3E6003C3E14 /* Controller */,
+				04BAC12D2C3D102B00DDBEAB /* Assets.xcassets */,
+				04BAC12F2C3D102B00DDBEAB /* LaunchScreen.storyboard */,
+				04BAC1322C3D102B00DDBEAB /* Info.plist */,
+			);
+			path = ConstableOnPatrol;
+			sourceTree = "<group>";
+		};
+		04FB798E2C3ED3E6003C3E14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04FB798F2C3ED406003C3E14 /* SignUpViewController.swift */,
+				04FB79962C3EE15F003C3E14 /* SignInViwController.swift */,
+				04FB79912C3ED418003C3E14 /* OTPViewController.swift */,
+				04694C892C3F815500BF9603 /* ApiMapsViewController.swift */,
+				04694C972C3FD15E00BF9603 /* Admin View Controller.swift */,
+				04CC07472C40ECE7008BED4E /* ProfileViewController.swift */,
+				04CC07492C40ECFA008BED4E /* SettingsViewController.swift */,
+				04CC074B2C410B1B008BED4E /* termsAndConditionViewController.swift */,
+				04CC074D2C411202008BED4E /* FAQsViewController.swift */,
+				04CC074F2C411EE3008BED4E /* PrivacyViewController.swift */,
+				04CC07512C4122A4008BED4E /* AboutUsViewController.swift */,
+				0413DB732C456CCF00135F15 /* APIManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04FB79952C3ED446003C3E14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04BAC12A2C3D102900DDBEAB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04BAC1202C3D102900DDBEAB /* ConstableOnPatrol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BAC1352C3D102B00DDBEAB /* Build configuration list for PBXNativeTarget "ConstableOnPatrol" */;
+			buildPhases = (
+				04BAC11D2C3D102900DDBEAB /* Sources */,
+				04BAC11E2C3D102900DDBEAB /* Frameworks */,
+				04BAC11F2C3D102900DDBEAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConstableOnPatrol;
+			packageProductDependencies = (
+				04694C9A2C3FE7E200BF9603 /* Alamofire */,
+			);
+			productName = ConstableOnPatrol;
+			productReference = 04BAC1212C3D102900DDBEAB /* ConstableOnPatrol.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04BAC1192C3D102900DDBEAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					04BAC1202C3D102900DDBEAB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 04BAC11C2C3D102900DDBEAB /* Build configuration list for PBXProject "COP_DP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04BAC1182C3D102900DDBEAB;
+			packageReferences = (
+				04694C992C3FE7E200BF9603 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 04BAC1222C3D102900DDBEAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04BAC1202C3D102900DDBEAB /* ConstableOnPatrol */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04BAC11F2C3D102900DDBEAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BAC12E2C3D102B00DDBEAB /* Assets.xcassets in Resources */,
+				04BAC1312C3D102B00DDBEAB /* Base in Resources */,
+				04BAC12C2C3D102900DDBEAB /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BAC11D2C3D102900DDBEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CC074C2C410B1B008BED4E /* termsAndConditionViewController.swift in Sources */,
+				047B41802C4B7FD5008B2722 /* UserData.swift in Sources */,
+				04FB79922C3ED418003C3E14 /* OTPViewController.swift in Sources */,
+				04694C8A2C3F815500BF9603 /* ApiMapsViewController.swift in Sources */,
+				0413DB802C462DA300135F15 /* CreateUser.swift in Sources */,
+				0413DB742C456CCF00135F15 /* APIManager.swift in Sources */,
+				04BAC1252C3D102900DDBEAB /* AppDelegate.swift in Sources */,
+				04694C962C3FB90D00BF9603 /* CrimeAnnotation.swift in Sources */,
+				04694C942C3FAAB700BF9603 /* OSMResponse.swift in Sources */,
+				04FB79992C3EEA2B003C3E14 /* CheckBox.swift in Sources */,
+				043914BC2C494BE900897E16 /* UserProvider.swift in Sources */,
+				04694C982C3FD15E00BF9603 /* Admin View Controller.swift in Sources */,
+				04FB79902C3ED406003C3E14 /* SignUpViewController.swift in Sources */,
+				04CC07522C4122A4008BED4E /* AboutUsViewController.swift in Sources */,
+				04CC074A2C40ECFA008BED4E /* SettingsViewController.swift in Sources */,
+				0413DB722C44CCAD00135F15 /* CrimesAndPoliceStations.swift in Sources */,
+				0413DB7A2C4589C600135F15 /* AuthService.swift in Sources */,
+				0413DB7C2C458E7200135F15 /* OTPResponse.swift in Sources */,
+				04FB79972C3EE15F003C3E14 /* SignInViwController.swift in Sources */,
+				04CC07482C40ECE7008BED4E /* ProfileViewController.swift in Sources */,
+				04CC074E2C411202008BED4E /* FAQsViewController.swift in Sources */,
+				04CC07502C411EE3008BED4E /* PrivacyViewController.swift in Sources */,
+				0413DB7E2C46215600135F15 /* VerifyOTPResponse.swift in Sources */,
+				04F1B6542C42328F00AE0948 /* dropDownButton.swift in Sources */,
+				04F1B6562C42357200AE0948 /* optionsShow.swift in Sources */,
+				04694C9D2C3FE83C00BF9603 /* Crime.swift in Sources */,
+				04BAC1272C3D102900DDBEAB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04BAC12A2C3D102900DDBEAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BAC12B2C3D102900DDBEAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04BAC12F2C3D102B00DDBEAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BAC1302C3D102B00DDBEAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04BAC1332C3D102B00DDBEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04BAC1342C3D102B00DDBEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04BAC1362C3D102B00DDBEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XDGUBBL4D4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConstableOnPatrol/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ConstableOnPatrol;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show crime markers on the map.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show crime markers on the map";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DelhiPolice.ConstableOnPatrol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04BAC1372C3D102B00DDBEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XDGUBBL4D4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConstableOnPatrol/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ConstableOnPatrol;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show crime markers on the map.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show crime markers on the map";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DelhiPolice.ConstableOnPatrol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04BAC11C2C3D102900DDBEAB /* Build configuration list for PBXProject "COP_DP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BAC1332C3D102B00DDBEAB /* Debug */,
+				04BAC1342C3D102B00DDBEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BAC1352C3D102B00DDBEAB /* Build configuration list for PBXNativeTarget "ConstableOnPatrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BAC1362C3D102B00DDBEAB /* Debug */,
+				04BAC1372C3D102B00DDBEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04694C992C3FE7E200BF9603 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04694C9A2C3FE7E200BF9603 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04694C992C3FE7E200BF9603 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 04BAC1192C3D102900DDBEAB /* Project object */;
+}
